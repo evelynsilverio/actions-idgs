@@ -1,4 +1,13 @@
-print("Hello World! runs on Actions")
+import os
 
-for i in [1, 2, 3, 4, 5]:
-    print("XD " * 1)
+def main():
+    print("Hello World! runs on Actions")
+
+    for i in [1, 2, 3, 4, 5]:
+        print("XD " * 1)
+
+    name = os.getenv("USERNAME")
+    print(f"Hola {name}")
+
+if __name__ == "__main__":
+    main()
