@@ -1,0 +1,21 @@
+name: Triggers
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    types:
+      - opened
+
+  issues:
+    types:
+      - opened
+
+jobs:
+  ejemplo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Probando triggers"
